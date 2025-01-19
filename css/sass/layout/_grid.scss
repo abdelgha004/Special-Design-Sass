@@ -1,0 +1,10 @@
+* {
+  @include prefixer(box-sizing, border-box, webkit moz);
+}
+
+.container {
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+}
