@@ -1,0 +1,22 @@
+:root {
+  --main-color: rgb(255, 157, 0);
+}
+
+$mainColor: var(--main-color);
+$primary-color: #2196f3;
+$secondary-color: #1787e0;
+$text-color: #333;
+$light-gray: #ddd;
+$white: #fff;
+
+// Spacing
+$spacing-unit: 15px;
+$container-padding: 15px;
+
+// Breakpoints 
+$mobile: 767px;
+$tablet: 991px;
+$desktop: 1199px;
+
+$transition-duration: 0.3s;
+$container-width: 1170px;

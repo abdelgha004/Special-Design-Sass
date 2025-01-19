@@ -1,5 +1,4 @@
 /* Start Settings Box */
-
 .setting-box {
   position: fixed;
   left: -200px;
@@ -21,55 +20,47 @@
     background-color: #fff;
     text-align: center;
     cursor: pointer;
+    
     .fa-gear {
       padding: 8px 0;
       width: 30px;
     }
   }
+
   .option-box {
     padding: 10px;
     text-align: center;
     background-color: #eee;
     margin: 10px;
+
     h4 {
       margin: 0;
       color: #666;
       font-size: 14px;
     }
+
     .colors-list {
       list-style: none;
       text-align: center;
       padding: 0;
       margin: 10px 0 0;
+
       li {
         width: 25px;
         height: 25px;
         background-color: #333;
+        border-radius: 50%;
         cursor: pointer;
         display: inline-block;
         border: 3px solid #eee;
-        border-radius: 50%;
+
         &.active {
           border-color: #fff;
-        }
-        &:first-child {
-          background-color: rgb(255, 157, 0);
-        }
-        &:nth-child(2) {
-          background-color: #e91e63;
-        }
-        &:nth-child(3) {
-          background-color: #009688;
-        }
-        &:nth-child(4) {
-          background-color: #03a9f4;
-        }
-        &:nth-child(5) {
-          background-color: #4caf50;
         }
       }
     }
   }
+
   .random-backgrounds {
     .yes,
     .no {
@@ -79,20 +70,21 @@
       margin-top: 10px;
       display: inline-block;
       padding: 4px 10px;
-      font: {
-        size: 12px;
-        weight: bold;
-      }
+      font-size: 12px;
+      font-weight: bold;
       border-radius: 4px;
       opacity: 0.5;
       cursor: pointer;
     }
-    span {
-      &.active {
-        opacity: 1;
-      }
+
+    span.active {
+      opacity: 1;
     }
   }
 }
-
 /* End Settings Box */
+
+@keyframes gear-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

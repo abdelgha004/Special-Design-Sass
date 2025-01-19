@@ -1,0 +1,27 @@
+// Abstract files
+@import "./sass/abstracts/variables";
+@import "./sass/abstracts/functions";
+@import "./sass/abstracts/mixins";
+
+// Base styles
+@import "./sass/base/reset";
+@import "./sass/base/typography";
+
+// Components
+@import "./sass/components/buttons";
+@import "./sass/components/popup";
+@import "./sass/components/skills";
+
+// Layout sections
+@import "./sass/layout/about";
+@import "./sass/layout/gallery";
+@import "./sass/layout/header";
+@import "./sass/layout/settings";
+
+// Pages
+@import "./sass/pages/home";
+
+
+
+
+

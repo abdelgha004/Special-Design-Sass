@@ -105,7 +105,7 @@ randomBackEl.forEach((span) => {
 let landingPage = document.querySelector(".landing-page");
 
 // Get Array Of Imgs
-let imgsArray = ["1.png", "2.png", "3.png", "4.png", "5.png", "6.png"];
+let imgsArray = ["1.png", "2.png", "3.png", "4.png", "5.png", "6.png"];  // Changed from 01.png to 1.png format
 
 // Function To Randomize Imgs
 function RandomizeImgs() {
@@ -208,6 +208,12 @@ ourGallery.forEach((img) => {
     closeButton.className = "close-button";
 
     // add close button to the popup box
-    popupBox.appendChild()
+    popupBox.appendChild(closeButton);
+    
+    // Add click event to close button
+    closeButton.onclick = function() {
+      this.parentNode.remove();
+      overlay.remove();
+    };
   });
 });

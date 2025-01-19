@@ -1,0 +1,31 @@
+.skills {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+  
+  .skill-box {
+    margin-bottom: 30px;
+    
+    .skill-name {
+      margin-bottom: 15px;
+      font-weight: bold;
+      color: $text-color;
+    }
+    
+    .skill-progress {
+      height: 30px;
+      background-color: $light-gray;
+      position: relative;
+      border-radius: 4px;
+      overflow: hidden;
+      
+      span {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        background-color: $primary-color;
+        transition: width 0.5s ease-in-out;
+      }
+    }
+  }
+}
